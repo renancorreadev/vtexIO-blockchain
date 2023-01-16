@@ -19,7 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
-    "@vtex/prettier-config": "^0.1.4",
+    "@vtex/prettier-config": "^1.0.0",
     "eslint": "^7.12.1",
     "eslint-config-vtex": "^12.3.2",
     "git-commit-msg-linter": "^4.0.7",
