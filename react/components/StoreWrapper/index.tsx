@@ -1,28 +1,21 @@
-
-import React,{ ComponentType, FC, Fragment, useMemo } from "react";
-import { ToastProvider } from "vtex.styleguide";
-import { WalletProvider } from "../../providers/WalletProvider";
-
+import type { ComponentType, FC } from 'react'
+import React, { Fragment, useMemo } from 'react'
 
 type IStoreWrapper = {
-  CustomContext?: ComponentType;
-};
+  CustomContext?: ComponentType
+}
 
 const StoreWrapper: FC<IStoreWrapper> = ({ children, CustomContext }) => {
   const CustomContextElement = useMemo(
-    () => CustomContext || Fragment,
+    () => CustomContext ?? Fragment,
     [CustomContext]
-  );
+  )
 
   return (
-    <div >
-      <ToastProvider>
-        <WalletProvider>
-          <CustomContextElement>{children}</CustomContextElement>
-        </WalletProvider>
-      </ToastProvider>
+    <div>
+      <CustomContextElement>{children}</CustomContextElement>
     </div>
-  );
-};
+  )
+}
 
-export default StoreWrapper;
+export default StoreWrapper

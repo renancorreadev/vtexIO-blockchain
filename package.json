@@ -1,0 +1,46 @@
+{
+  "version": "0.0.1",
+  "name": "vtexio-blockchain",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "lint:locales": "intl-equalizer",
+    "test": "cd ./react && yarn test",
+    "v-un": "vtex uninstall delupo.add-button-condition delupo.avanti-menu delupo.compartilhar-pdp delupo.dynamic-menu delupo.jivochat-buttom delupo.meter-calculator  delupo.payment-modal delupo.screw-page delupo.sku-selector-custom delupo.video-pdp delupo.store-theme",
+    "prepare": "husky install"
+  },
+  "intl-equalizer": {
+    "referenceLocale": "en",
+    "localeDirectory": "messages"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && intl-equalizer"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@vtex/intl-equalizer": "^2.5.0",
+    "@vtex/prettier-config": "^1.0.0",
+    "@vtex/tsconfig": "^0.6.0",
+    "eslint": "7",
+    "eslint-config-vtex": "^12.8.11",
+    "eslint-config-vtex-react": "^6.8.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.8.3"
+  }
+}

@@ -8,8 +8,5 @@
   },
   "storeWrapper": {
     "component": "StoreWrapper"
-  },
-  "connect": {
-    "component": "Connection"
   }
 }

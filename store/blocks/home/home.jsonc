@@ -1,6 +1,10 @@
 {
   "store.home": {
-    "blocks": ["connect#wallet-connect"]
+    "blocks": ["rich-text#hello"]
+  },
+  "rich-text#hello": {
+    "props": {
+      "text": "Hello"
+    }
   }
-
 }
