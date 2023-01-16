@@ -1,0 +1,15 @@
+{
+  "store": {
+    "allowConditions": true,
+    "component": "*",
+    "around": ["storeWrapper"],
+    "before": ["header.full"],
+    "after": ["footer"]
+  },
+  "storeWrapper": {
+    "component": "StoreWrapper"
+  },
+  "connect": {
+    "component": "Connection"
+  }
+}

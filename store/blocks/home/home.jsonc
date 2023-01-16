@@ -1,0 +1,6 @@
+{
+  "store.home": {
+    "blocks": ["connect#wallet-connect"]
+  }
+
+}

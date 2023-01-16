@@ -1,0 +1,23 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "noEmitOnError": false,
+    "lib": ["dom"],
+    "noImplicitReturns": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "allowSyntheticDefaultImports": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "include": [
+    "./typings/*.d.ts",
+    "./*/*/*.tsx",
+    "./typings/*.ts",
+    "./typings/declaration.d.ts",
+    "components/PreBanner/@types/ImageProps.ts"
+  ],
+  "exclude": ["./**/*.jsx", "./**/*.js"]
+}
