@@ -1,0 +1,8 @@
+{
+  "react/src/*.{ts,tsx,js,jsx}": [
+    "npx eslint 'react/src/*.{ts,tsx,js,jsx}' --fix"
+  ],
+  "react/src/**/*.{ts,tsx,js,jsx}": [
+    "npx eslint 'react/src/**/*.{ts,tsx,js,jsx}' --fix"
+  ]
+}

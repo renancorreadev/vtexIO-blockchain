@@ -1,0 +1,44 @@
+.global-css button {
+  cursor: pointer;
+}
+
+/* HEADER */
+
+.global-css
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-desktop
+    .items-stretch:nth-child(2)) {
+  width: 100% !important;
+}
+
+.global-css
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-desktop
+    .items-stretch:nth-child(3)) {
+  width: 100% !important;
+  justify-content: flex-end !important;
+}
+
+.global-css
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-desktop
+    .items-stretch:nth-child(5)
+    > div) {
+  margin-left: 4rem;
+}
+
+/* FOOTER */
+
+.global-css
+  :global(.vtex-flex-layout-0-x-flexRowContent--footer-desktop--content
+    > div:nth-child(3)) {
+  min-width: 15rem !important;
+  width: 15rem !important;
+}
+
+.global-css
+  :global(.vtex-flex-layout-0-x-flexRowContent--footer-desktop--content
+    > div:nth-child(2)) {
+  width: 100% !important;
+}
+
+.global-css :global(.vtex-toast) {
+  background-color: #0025e0;
+}

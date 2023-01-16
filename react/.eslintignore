@@ -1,0 +1,18 @@
+node_modules
+.vscode
+coverage
+public
+
+# styles
+
+*.scss
+
+# images and vectors
+
+*.svg
+*.jpe
+*.jpeg
+*.png
+*.gif
+
+*.d.ts

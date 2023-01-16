@@ -1,3 +1,3 @@
-import StoreWrapper from "./components/StoreWrapper/index";
+import StoreWrapper from './src/App/StoreWrapper'
 
-export default StoreWrapper;
+export default StoreWrapper
