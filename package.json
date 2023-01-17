@@ -29,7 +29,6 @@
     "typescript": "^3.8.3"
   },
   "version": "0.0.0",
-  "repository": "git@github.com:codeby-global/blu.store-theme.git",
-  "author": "Joao Azevedo",
+  "author": "Renan Cesar",
   "dependencies": {}
 }
